@@ -5,7 +5,8 @@ requires-python = ">=3.13"
 dependencies = [
   "hatchling",
   "mcp",
-  "mcp[cli]"
+  "mcp[cli]",
+  "uv"
 ]
 
 [build-system]

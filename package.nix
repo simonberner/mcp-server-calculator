@@ -6,6 +6,7 @@ with pkgs;
     src = ./.;
     propagatedBuildInputs = with python3Packages; [
       mcp
+      uv
       hatchling
     ] ++ mcp.optional-dependencies.cli;
   }
