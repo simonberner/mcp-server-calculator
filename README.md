@@ -4,19 +4,25 @@
 
 ## About
 
-> "MCP can provide a single, standardized way for AI models to interact with external systems. You write code once and all AI systems can use it." [1]
+> "MCP can provide a single, standardized way for AI models to interact with external systems. You write code once and all AI systems can use it." [1](#resources)
 
 ### Server
 
-> "Servers are the fundamental building block that enriches LLMs with external data and context." [2]
+> "Servers are the fundamental building block that enriches LLMs with external data and context." [2](#resources)
 
 ## Usage
 
 TODO
 
+- MCP Inspector is a handy GUI tool that lets you test your custom MCP server without integrating it with LLM / AI agents.
+
+```shell
+mcp dev src/mcp_server_calculator/calculator.py
+```
+
 ## Dev Setup
 
-As we are using Nix in this project for having a reproducible and isolated development environment, there is no need to install Python or any other dependencies. You will get everything you need within seconds out of the box. Also there is no need to create a virtual environment in Python using `venv` or `poetry`. You just need to be willing to install Nix on your system.
+As we are using Nix in this project for having a reproducible and isolated development environment, there is no need to install Python or any other dependencies. You will get everything you need out of the box. Also there is no need to create a virtual environment in Python using `venv` or `poetry`, but you have to be willing to install Nix on your system.
 
 - Install [direnv](https://github.com/direnv/direnv)
 - Install [Lix](https://lix.systems/install/)
@@ -26,6 +32,7 @@ As we are using Nix in this project for having a reproducible and isolated devel
 - Run `pytest`
 
 That's it!
+
 ### Tech Stack
 
 - Python3
@@ -39,12 +46,16 @@ That's it!
 - [1] [MCP server: A step-by-step guide to building from scratch](https://composio.dev/blog/mcp-server-step-by-step-guide-to-building-from-scrtch/)
 - [2] [What is Model Context Protocol (MCP)?](https://composio.dev/blog/what-is-model-context-protocol-mcp-explained/)
 - [Understanding MCP and how AI engineers can leverage it](https://dev.to/luxdevhq/understanding-mcp-and-how-ai-engineers-can-leverage-it-3e2i`)
+- [MCP SDK](https://pypi.org/project/mcp/)
+- [MCP CLI](https://pypi.org/project/mcp-cli/)
+- [MCP Inspector](https://github.com/modelcontextprotocol/inspector)
+- [The largest collection of MCP Servers](https://mcp.so/)
 
 ## Credits
 
 - Project setup taken from [ical2json](https://github.com/CodersOnlyCH/ical2json)
 
-## About Nix
+## Nice things to know
 
 - [Why using Nix?](https://nixos.org/)
 - [Why using Lix?](https://lix.systems/about/#why-lix)
