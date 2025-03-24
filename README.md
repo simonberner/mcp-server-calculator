@@ -12,13 +12,17 @@
 
 ## Usage
 
-TODO
+🚧 TODO
 
 - MCP Inspector is a handy GUI tool that lets you test your custom MCP server without integrating it with LLM / AI agents.
 
 ```shell
 mcp dev src/mcp_server_calculator/calculator.py
 ```
+
+### Notes
+
+- When using [Windsurf IDE](https://codeium.com/windsurf) as MCP Client, you need to have an [Pro Plan](https://codeium.com/pricing) to be able to use MCP Servers.
 
 ## Dev Setup
 
@@ -50,10 +54,12 @@ That's it!
 - [MCP CLI](https://pypi.org/project/mcp-cli/)
 - [MCP Inspector](https://github.com/modelcontextprotocol/inspector)
 - [The largest collection of MCP Servers](https://mcp.so/)
+- [A Beginner's Guide to using MCP](https://youtu.be/Y_kaQmhGmZk)
+- [Claude MCP has Changed AI Forever - Here's What You NEED to Know](https://www.youtube.com/watch?v=v_6EXt6T83I)
 
 ## Credits
 
-- Project setup taken from [ical2json](https://github.com/CodersOnlyCH/ical2json)
+- Nix-Setup taken from [ical2json](https://github.com/CodersOnlyCH/ical2json)
 
 ## Nice things to know
 
