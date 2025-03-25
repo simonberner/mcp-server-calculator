@@ -4,9 +4,9 @@
 
 ## About
 
-> "MCP can provide a single, standardized way for AI models to interact with external systems. You write code once and all AI systems can use it." [1](#resources)
+Model Context Protocol (MCP) is a protocol that enables LLMs to access custom tools and services. An MCP client can make requests to MCP servers to access tools that they provide. This example represents a simple calculator server that provides basic math operations to a client.
 
-### Server
+> "MCP can provide a single, standardized way for AI models to interact with external systems. You write code once and all AI systems can use it." [1](#resources)
 
 > "Servers are the fundamental building block that enriches LLMs with external data and context." [2](#resources)
 
@@ -14,7 +14,9 @@
 
 🚧 TODO
 
-- MCP Inspector is a handy GUI tool that lets you test your custom MCP server without integrating it with LLM / AI agents.
+### Running & Testing the Server locally
+
+- [MCP Inspector](https://modelcontextprotocol.io/docs/tools/inspector) is a handy GUI tool that lets you test your custom MCP server without integrating it with LLM / AI agents.
 
 ```shell
 mcp dev src/mcp_server_calculator/calculator.py
@@ -22,7 +24,7 @@ mcp dev src/mcp_server_calculator/calculator.py
 
 ### Notes
 
-- When using [Windsurf IDE](https://codeium.com/windsurf) as MCP Client, you need to have an [Pro Plan](https://codeium.com/pricing) to be able to use MCP Servers.
+- When using [Windsurf IDE](https://codeium.com/windsurf) as MCP Client, you need to have a [Pro Plan](https://codeium.com/pricing) to be able to use MCP Servers.
 
 ## Dev Setup
 
@@ -56,12 +58,15 @@ That's it!
 - [The largest collection of MCP Servers](https://mcp.so/)
 - [A Beginner's Guide to using MCP](https://youtu.be/Y_kaQmhGmZk)
 - [Claude MCP has Changed AI Forever - Here's What You NEED to Know](https://www.youtube.com/watch?v=v_6EXt6T83I)
+- [Find MCP servers](https://windsurf.run/mcp)
 
 ## Credits
 
 - Nix-Setup taken from [ical2json](https://github.com/CodersOnlyCH/ical2json)
 
 ## Nice things to know
+
+### Nix
 
 - [Why using Nix?](https://nixos.org/)
 - [Why using Lix?](https://lix.systems/about/#why-lix)
