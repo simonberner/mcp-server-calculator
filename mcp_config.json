@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "calculator": {
+      "command": "python -m mcp_server_calculator.calculator",
+      "cwd": "path/to/your/project/src",
+      "transport": "stdio"
+    }
+  }
+}
