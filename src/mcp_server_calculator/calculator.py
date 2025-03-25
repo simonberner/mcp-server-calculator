@@ -97,4 +97,4 @@ def greeting(name: str) -> str:
 
 # Start the MCP server and allow communication via standard input/output (stdio).
 if __name__ == "__main__":
-    mcp.run(transports="stdio")
+    mcp.run(transport="stdio")
