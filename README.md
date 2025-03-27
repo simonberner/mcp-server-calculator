@@ -16,10 +16,27 @@ Model Context Protocol (MCP) is a protocol that enables LLMs to access custom to
 
 ### Running & Testing the Server locally
 
-- [MCP Inspector](https://modelcontextprotocol.io/docs/tools/inspector) is a handy GUI tool that lets you test your custom MCP server without integrating it with LLM / AI agents.
+- [MCP Inspector](https://modelcontextprotocol.io/docs/tools/inspector) is a handy GUI tool that lets you test your custom MCP server via web interface at http://localhost:5173 without integrating it with LLM / AI agents.
 
 ```shell
 mcp dev src/mcp_server_calculator/calculator.py
+```
+
+### MCP config
+
+- Add the following to your mcp config:
+
+```json
+{
+  "mcpServers": {
+    "calculator": {
+      "command": "uv",
+      "args": [
+        "run --with mcp mcp run src/mcp_server_calculator/calculator.py"
+      ]
+    }
+  }
+}
 ```
 
 ### Notes
