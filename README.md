@@ -12,8 +12,6 @@ Model Context Protocol (MCP) is a protocol that enables LLMs to access custom to
 
 ## Usage
 
-🚧 TODO
-
 ### Running & Testing the Server locally
 
 - [MCP Inspector](https://modelcontextprotocol.io/docs/tools/inspector) is a handy GUI tool that lets you test your custom MCP server via web interface at http://localhost:5173 without integrating it with LLM / AI agents.
@@ -22,7 +20,7 @@ Model Context Protocol (MCP) is a protocol that enables LLMs to access custom to
 mcp dev src/mcp_server_calculator/calculator.py
 ```
 
-### MCP config
+### Host/Client integration
 
 - Add the following to your mcp config:
 
@@ -30,9 +28,9 @@ mcp dev src/mcp_server_calculator/calculator.py
 {
   "mcpServers": {
     "calculator": {
-      "command": "uv",
+      "command": "python",
       "args": [
-        "run --with mcp mcp run src/mcp_server_calculator/calculator.py"
+        ".../mcp-server-calculator/src/mcp_server_calculator/calculator.py"
       ]
     }
   }
@@ -41,7 +39,7 @@ mcp dev src/mcp_server_calculator/calculator.py
 
 ### Notes
 
-- When using [Windsurf IDE](https://codeium.com/windsurf) as MCP Client, you need to have a [Pro Plan](https://codeium.com/pricing) to be able to use MCP Servers.
+- When using [Windsurf IDE](https://codeium.com/windsurf) as MCP Host, you need to have a [Pro Plan](https://codeium.com/pricing) to be able to use Cascade (as MCP Client) with MCP Servers.
 
 ## Dev Setup
 
@@ -76,6 +74,8 @@ That's it!
 - [A Beginner's Guide to using MCP](https://youtu.be/Y_kaQmhGmZk)
 - [Claude MCP has Changed AI Forever - Here's What You NEED to Know](https://www.youtube.com/watch?v=v_6EXt6T83I)
 - [Find MCP servers](https://windsurf.run/mcp)
+- [Build your first MCP server with TypeScript in under 10 minutes](https://hackteam.io/blog/build-your-first-mcp-server-with-typescript-in-under-10-minutes/)
+- [Model Context Protocol (MCP) Introduction](https://modelcontextprotocol.io/introduction)
 
 ## Credits
 
