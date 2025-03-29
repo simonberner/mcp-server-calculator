@@ -1,7 +1,5 @@
 # How to build an MCP server - Calculator Example
 
-⚠️ work in progress ⚠️
-
 ## About
 
 Model Context Protocol (MCP) is a protocol that enables LLMs to access custom tools and services. An MCP client can make requests to MCP servers to access tools that they provide. This example represents a simple calculator server that provides basic math operations to a client.
@@ -10,7 +8,24 @@ Model Context Protocol (MCP) is a protocol that enables LLMs to access custom to
 
 > "Servers are the fundamental building block that enriches LLMs with external data and context." [2](#resources)
 
-## Usage
+## Tech Stack
+
+- Python3
+- Pytest
+- MCP SDK
+- MCP CLI
+- Nix
+
+## How to setup and use
+
+As we are using Nix in this project for having a reproducible and isolated development environment, there is no need to install Python or any other dependencies. You will get everything you need out of the box. Also there is no need to create a virtual environment in Python using `venv` or `poetry`, but you have to be willing to install Nix on your system.
+
+- Install [direnv](https://github.com/direnv/direnv) (used to load the development environment)
+- Install [Lix](https://lix.systems/install/)
+- Clone this repository
+- cd into the directory
+- Run `direnv allow`
+- Run `pytest`
 
 ### Running & Testing the Server locally
 
@@ -30,7 +45,7 @@ mcp dev src/mcp_server_calculator/calculator.py
     "calculator": {
       "command": "python",
       "args": [
-        ".../mcp-server-calculator/src/mcp_server_calculator/calculator.py"
+        "<YOUR-PATH>/mcp-server-calculator/src/mcp_server_calculator/calculator.py"
       ]
     }
   }
@@ -41,26 +56,9 @@ mcp dev src/mcp_server_calculator/calculator.py
 
 - When using [Windsurf IDE](https://codeium.com/windsurf) as MCP Host, you need to have a [Pro Plan](https://codeium.com/pricing) to be able to use Cascade (as MCP Client) with MCP Servers.
 
-## Dev Setup
+## Issues
 
-As we are using Nix in this project for having a reproducible and isolated development environment, there is no need to install Python or any other dependencies. You will get everything you need out of the box. Also there is no need to create a virtual environment in Python using `venv` or `poetry`, but you have to be willing to install Nix on your system.
-
-- Install [direnv](https://github.com/direnv/direnv)
-- Install [Lix](https://lix.systems/install/)
-- Clone this repository
-- cd into the directory
-- Run `direnv allow`
-- Run `pytest`
-
-That's it!
-
-### Tech Stack
-
-- Python3
-- Pytest
-- MCP SDK
-- MCP CLI
-- Nix
+Check [Issues](https://github.com/simonberner/mcp-server-calculator/issues) for seeing the current issues or for opening a new one.
 
 ## Resources
 
