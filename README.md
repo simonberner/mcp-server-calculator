@@ -27,6 +27,26 @@ As we are using Nix in this project for having a reproducible and isolated devel
 - Run `direnv allow`
 - Run `pytest`
 
+### Alternative
+
+If you don't want to setup and use Nix, you can of course also use [uv](https://docs.astral.sh/uv/) to build the package/project. Here is some guidance:
+
+```shell
+# Install uv (see https://docs.astral.sh/uv/getting-started/installation/)
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Create a virtual environment named .venv
+uv venv
+
+# Activate the virtual environment (example for bash/zsh)
+source .venv/bin/activate
+
+# Now run the install or build commands
+uv pip install -e .
+# or
+uv pip wheel . -w dist
+```
+
 ### Running & Testing the Server locally
 
 - [MCP Inspector](https://modelcontextprotocol.io/docs/tools/inspector) is a handy GUI tool that lets you test your custom MCP server via web interface at http://localhost:5173 without integrating it with LLM / AI agents.
