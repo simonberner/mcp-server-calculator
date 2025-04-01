@@ -8,6 +8,8 @@ Model Context Protocol (MCP) is a protocol that enables LLMs to access custom to
 
 > "Servers are the fundamental building block that enriches LLMs with external data and context." [2](#resources)
 
+![Chat MCP Calculator](./chat-mcp-calculator.webp)
+
 ## Tech Stack
 
 - Python3
