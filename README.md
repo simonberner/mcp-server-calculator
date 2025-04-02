@@ -1,5 +1,7 @@
 # How to build an MCP server - Calculator Example
 
+[![smithery badge](https://smithery.ai/badge/@simonberner/mcp-server-calculator)](https://smithery.ai/server/@simonberner/mcp-server-calculator)
+
 ## About
 
 Model Context Protocol (MCP) is a protocol that enables LLMs to access custom tools and services. An MCP client can make requests to MCP servers to access tools that they provide. This example represents a simple calculator server that provides basic math operations to a client.
@@ -28,6 +30,14 @@ As we are using Nix in this project for having a reproducible and isolated devel
 - cd into the directory
 - Run `direnv allow`
 - Run `pytest`
+
+### Installing via Smithery
+
+To install mcp-server-calculator for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@simonberner/mcp-server-calculator):
+
+```bash
+npx -y @smithery/cli install @simonberner/mcp-server-calculator --client claude
+```
 
 ### Alternative
 
