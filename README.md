@@ -4,6 +4,10 @@
 
 ## About
 
+This is a very simple example of how to build an MCP server that provides basic math operations to an MCP client.
+
+### What is MCP?
+
 Model Context Protocol (MCP) is a protocol that enables LLMs to access custom tools and services. An MCP client can make requests to MCP servers to access tools that they provide. This example represents a simple calculator server that provides basic math operations to a client.
 
 > "MCP can provide a single, standardized way for AI models to interact with external systems. You write code once and all AI systems can use it." [1](#resources)
@@ -18,9 +22,19 @@ Model Context Protocol (MCP) is a protocol that enables LLMs to access custom to
 - Pytest
 - MCP SDK
 - MCP CLI
-- Nix
+- Nix (optional)
 
 ## How to setup and use
+
+### Smithery
+
+To install mcp-server-calculator for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@simonberner/mcp-server-calculator):
+
+```bash
+npx -y @smithery/cli install @simonberner/mcp-server-calculator --client claude
+```
+
+### Development Setup
 
 As we are using Nix in this project for having a reproducible and isolated development environment, there is no need to install Python or any other dependencies. You will get everything you need out of the box. Also there is no need to create a virtual environment in Python using `venv` or `poetry`, but you have to be willing to install Nix on your system.
 
@@ -31,17 +45,9 @@ As we are using Nix in this project for having a reproducible and isolated devel
 - Run `direnv allow`
 - Run `pytest`
 
-### Installing via Smithery
-
-To install mcp-server-calculator for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@simonberner/mcp-server-calculator):
-
-```bash
-npx -y @smithery/cli install @simonberner/mcp-server-calculator --client claude
-```
-
 ### Alternative
 
-If you don't want to setup and use Nix, you can of course also use [uv](https://docs.astral.sh/uv/) to build the package/project. Here is some guidance:
+If you don't want to take the Smithery or the Nix route, you can of course also use [uv](https://docs.astral.sh/uv/) to build the package/project. Here is some guidance:
 
 ```shell
 # Install uv (see https://docs.astral.sh/uv/getting-started/installation/)
