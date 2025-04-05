@@ -1,6 +1,7 @@
 # How to build an MCP server - Calculator Example
 
 [![smithery badge](https://smithery.ai/badge/@simonberner/mcp-server-calculator)](https://smithery.ai/server/@simonberner/mcp-server-calculator)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/simonberner/mcp-server-calculator/blob/main/LICENSE)
 
 ## About
 
