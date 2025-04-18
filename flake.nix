@@ -20,7 +20,7 @@
         devShells = rec {
           default = dev;
           dev = let
-            python = pkgs.python313.withPackages (ps:
+            python = pkgs.python3.withPackages (ps:
               with ps; [
                 mcp-server-calculator
                 pytest

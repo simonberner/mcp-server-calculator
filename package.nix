@@ -1,10 +1,10 @@
 {pkgs, ...}:
 with pkgs;
-  python313Packages.buildPythonPackage {
+  python3Packages.buildPythonPackage {
     name = "mcp-server-calculator";
     format = "pyproject";
     src = ./.;
-    propagatedBuildInputs = with python313Packages; [
+    propagatedBuildInputs = with python3Packages; [
       mcp
       uv
       hatchling
