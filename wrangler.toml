@@ -1,9 +1,0 @@
-# Top-level configuration
-name = "mcp-server-calculator"
-main = "src/mcp_server_calculator/calculator.py"
-compatibility_flags = ["python_workers"]
-compatibility_date = "2025-04-17"
-
-# Build configuration
-[build.upload]
-format = "modules"
