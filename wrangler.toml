@@ -7,3 +7,6 @@ compatibility_date = "2025-04-17"
 # Build configuration
 [build.upload]
 format = "modules"
+
+[observability.logs]
+enabled = true
