@@ -126,3 +126,8 @@ Check [Issues](https://github.com/simonberner/mcp-server-calculator/issues) for 
 - [Why using Lix?](https://lix.systems/about/#why-lix)
 - [Nix packages](https://search.nixos.org/packages)
 - [nix-shell](https://nix.dev/manual/nix/2.26/command-ref/nix-shell.html)
+
+### Cloudflare
+
+- [Build a Remote MCP server](https://developers.cloudflare.com/agents/guides/remote-mcp-server/)
+- [Wrangler configuration](https://developers.cloudflare.com/workers/wrangler/configuration/)
